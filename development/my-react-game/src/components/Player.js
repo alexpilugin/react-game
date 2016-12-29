@@ -11,8 +11,8 @@ class Player extends React.Component {
     return (
       <div className="Player">
         <StatusIndicator />
-        <h2>Player {this.props.name}</h2>
-        <Avatar />
+        <h2>Player {this.props.player}</h2>
+        <Avatar player={this.props.player}/>
         <Parameters />
         <Actions />
       </div>

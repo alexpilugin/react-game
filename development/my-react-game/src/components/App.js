@@ -6,8 +6,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <Player name="A" />
-          <Player name="B" />
+          <Player player="A" />
+          <Player player="B" />
       </div>
     );
   }
