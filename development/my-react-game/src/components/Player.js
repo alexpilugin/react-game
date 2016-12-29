@@ -6,7 +6,7 @@ import Actions from './Actions';
 
 import './style/Player.css';
 
-class Player extends React.Component {
+const Player = React.createClass({
   render() {
     return (
       <div className="Player">
@@ -16,8 +16,7 @@ class Player extends React.Component {
         <Parameters />
         <Actions />
       </div>
-    );
-  }
-}
+    )}
+})
 
 export default Player;
