@@ -8,12 +8,13 @@ import './style/Player.css';
 
 const Player = React.createClass({
   render() {
+    console.log(this.props.parameters);
     return (
       <div className="Player">
         <StatusIndicator />
-        <h2>Player {this.props.player}</h2>
+        <h2>Player: {this.props.name}</h2>
         <Avatar player={this.props.player}/>
-        <Parameters />
+        <Parameters params={this.props.parameters}/> 
         <Actions />
       </div>
     )}

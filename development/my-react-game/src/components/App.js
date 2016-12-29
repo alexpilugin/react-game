@@ -9,26 +9,44 @@ const App = React.createClass({
       currentPlayer: 0,
       players: [{
         'player': 'A',
-        'name': 'human',
+        'name': 'Warrior',
         'status': 'waiting', //or 'ready'
-        'forces': 100,
-        'hit': 0,
-        'defense': 0
+        parameters: {
+          'forces': 100,
+          'hit': 0,
+          'defense': 0
+        }
       },{
         'player': 'B',
-        'name': 'monster',
+        'name': 'Enemy',
         'status': 'waiting', //or 'ready'
-        'forces': 100,
-        'hit': 0,
-        'defense': 0
+        parameters: {
+          'forces': 100,
+          'hit': 0,
+          'defense': 0
+        }
       }]
     };
   },
   render() {
+     const players = this.state.players.map((item) => {
+          return (
+            <Player 
+                key={item.player}
+                id={'player-' + item.player}
+                player={item.player}
+                name={item.name}
+                status={item.status}
+                forces={item.forces}
+                hit={item.hit}
+                defence={item.defense}
+                parameters={item.parameters}
+            />   
+          )
+      })
     return (
       <div className="App">
-          <Player player="A" />
-          <Player player="B" />
+          {players}
       </div>
     )}
 })

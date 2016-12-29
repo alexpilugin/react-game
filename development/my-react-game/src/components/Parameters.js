@@ -8,7 +8,9 @@ class Parameters extends React.Component {
     return (
       <div className="Parameters">
         <h3>Parameters</h3>
-        <ProgressBar />
+        <ProgressBar>Forces: {this.props.params.forces}</ProgressBar>
+        <ProgressBar>Hit: {this.props.params.hit}</ProgressBar>
+        <ProgressBar>Defense: {this.props.params.defense}</ProgressBar>
       </div>
     );
   }

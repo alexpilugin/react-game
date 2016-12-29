@@ -1,0 +1,25 @@
+.ActionBtn {
+    cursor: pointer;
+    clear: right; 
+    border: 1px solid gray;
+    width: 120px;;
+    height: auto; 
+    float: left;  
+}
+.ActionBtn .action-pic {
+    width: 64px;
+    height: 64px;  
+    background-color: dodgerblue; 
+    float: left;
+    margin: 5px; 
+}
+.ActionBtn .description {
+    float: left;
+    width: 120px;
+    margin-right: 20px; 
+}
+.ActionBtn .description p {
+    text-align: left;
+    margin: 2px;
+    padding: 5px;
+}

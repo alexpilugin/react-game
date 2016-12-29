@@ -37,14 +37,20 @@ const Actions = React.createClass({
     },
 
   render() {
+      const actions = this.state.actions.map((item) => {
+          return (
+            <ActionBtn 
+                key={item.action}
+                id={'action-' + item.action}
+                forces={item.forces}
+                hit={item.hit}
+                defense={item.defense}
+            />   
+          )
+      })
     return (
       <div className="Actions">
-        <h3>Actions</h3>
-        <ActionBtn />
-        <ActionBtn />
-        <ActionBtn />
-        <ActionBtn />
-        <ActionBtn />
+        {actions}
         <RundomActionBtn />
       </div>
     )}
