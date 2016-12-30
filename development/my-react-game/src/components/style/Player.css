@@ -3,3 +3,6 @@
     flex-flow: left;
     flex: 50%;
 }
+.Player h2 {
+    text-align: center;
+}

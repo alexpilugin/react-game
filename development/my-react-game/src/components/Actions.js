@@ -11,27 +11,27 @@ const Actions = React.createClass({
             'action': 'A',
             'forces': -5,
             'hit': 35,
-            'defense': 75
+            'defense': 75,
             },{
             'action': 'B',
-            'forces': -10,
-            'hit': 80,
-            'defense': 30
-            },{
-            'action': 'C',
             'forces': -5,
             'hit': 15,
-            'defense': 100
+            'defense': 100,
+            },{
+            'action': 'C',
+            'forces': -10,
+            'hit': 80,
+            'defense': 30,
             },{
             'action': 'D',
             'forces': -15,
             'hit': 80,
-            'defense': 50
+            'defense': 50,
             },{
             'action': 'E',
             'forces': +30,
             'hit': 0,
-            'defense': 0
+            'defense': 0,
             }]
         }
     },

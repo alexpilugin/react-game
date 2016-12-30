@@ -1,13 +1,15 @@
 .ActionBtn {
     cursor: pointer;
     clear: right; 
+    border-radius: 5px;
     border: 1px solid gray;
     width: 120px;;
     height: auto; 
-    float: left;  
+    display:inline-block; /* instead float:left */
+    margin: 5px;  
 }
 .ActionBtn .action-pic {
-    width: 64px;
+    width: 110px;
     height: 64px;  
     background-color: dodgerblue; 
     float: left;
@@ -21,5 +23,5 @@
 .ActionBtn .description p {
     text-align: left;
     margin: 2px;
-    padding: 5px;
+    padding-left: 4px;
 }

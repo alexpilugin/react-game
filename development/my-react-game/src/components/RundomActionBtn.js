@@ -6,7 +6,7 @@ class RundomActionBtn extends React.Component {
   render() {
     return (
       <div className="RundomActionBtn">
-        RundomActionBtn
+        Rundom
       </div>
     );
   }

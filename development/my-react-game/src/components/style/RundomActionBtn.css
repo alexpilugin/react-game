@@ -1,3 +1,11 @@
 .RundomActionBtn {
     clear: both;
+    width: 180px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 3ps;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }

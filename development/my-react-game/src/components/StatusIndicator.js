@@ -6,7 +6,7 @@ class StatusIndicator extends React.Component {
   render() {
     return (
       <div className="StatusIndicator">
-        StatusIndicator
+        Status: {this.props.status}
       </div>
     );
   }

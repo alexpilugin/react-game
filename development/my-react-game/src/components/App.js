@@ -13,8 +13,8 @@ const App = React.createClass({
         'status': 'waiting', //or 'ready'
         parameters: {
           'forces': 100,
-          'hit': 0,
-          'defense': 0
+          'hit': 5,
+          'defense': 5
         }
       },{
         'player': 'B',
@@ -22,8 +22,8 @@ const App = React.createClass({
         'status': 'waiting', //or 'ready'
         parameters: {
           'forces': 100,
-          'hit': 0,
-          'defense': 0
+          'hit': 5,
+          'defense': 5
         }
       }]
     };

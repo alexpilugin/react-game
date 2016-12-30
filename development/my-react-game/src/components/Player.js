@@ -11,7 +11,7 @@ const Player = React.createClass({
     console.log(this.props.parameters);
     return (
       <div className="Player">
-        <StatusIndicator />
+        <StatusIndicator status={this.props.status}/>
         <h2>Player: {this.props.name}</h2>
         <Avatar player={this.props.player}/>
         <Parameters params={this.props.parameters}/> 

@@ -5,12 +5,17 @@ import './style/Parameters.css';
 
 class Parameters extends React.Component {
   render() {
+    const bars = Object.entries(this.props.params).map(([key,value]) => {
+      return (
+        <ProgressBar 
+          key={key}
+          property={key} 
+          value={Number(value)} />  
+      )
+    });
     return (
       <div className="Parameters">
-        <h3>Parameters</h3>
-        <ProgressBar>Forces: {this.props.params.forces}</ProgressBar>
-        <ProgressBar>Hit: {this.props.params.hit}</ProgressBar>
-        <ProgressBar>Defense: {this.props.params.defense}</ProgressBar>
+        {bars}
       </div>
     );
   }
