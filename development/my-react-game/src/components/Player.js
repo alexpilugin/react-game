@@ -7,15 +7,37 @@ import Actions from './Actions';
 import './style/Player.css';
 
 const Player = React.createClass({
+  getInitialState: function () {
+      return {
+        status: this.props.status,
+      };
+  },
+  handleClickActionBtn: function (action) {
+    if (this.state.status === 'ready') return false;
+    
+    //onClickActionBtn( attr );
+    this.props.onClickActionBtn({
+      player: this.props.player, 
+      action: action,
+      status: 'ready',
+    });
+    this.setState({ status: 'ready' }); 
+  },
   render() {
-    console.log(this.props.parameters);
+    //console.log(this.props.parameters);
+    const btnStatus = this.props.status === 'waiting' ? 'enabled' : 'disabled';
+    console.log(btnStatus);
     return (
       <div className="Player">
-        <StatusIndicator status={this.props.status}/>
+        <StatusIndicator status={this.state.status}/>
         <h2>Player: {this.props.name}</h2>
         <Avatar player={this.props.player}/>
         <Parameters params={this.props.parameters}/> 
-        <Actions />
+        <Actions 
+          player={this.props.player} 
+          status={btnStatus}
+          onClickActionBtn={this.handleClickActionBtn}
+        />
       </div>
     )}
 })

@@ -2,11 +2,14 @@
     cursor: pointer;
     clear: right; 
     border-radius: 5px;
-    border: 1px solid gray;
-    width: 120px;;
+    width: 120px;
     height: auto; 
     display:inline-block; /* instead float:left */
     margin: 5px;  
+}
+.ActionBtn:hover {
+    font-weight: 800;
+    background-color: honeydew;
 }
 .ActionBtn .action-pic {
     width: 110px;
@@ -24,4 +27,14 @@
     text-align: left;
     margin: 2px;
     padding-left: 4px;
+}
+.btnClicked {
+    border: 2px solid royalblue; 
+    box-shadow: 0px 0px 10px royalblue;   
+}
+.btnNotClicked { border: 1px solid gray; }
+.btnDisabled {
+    background-color: #eee;
+    color: gray;
+    opacity: 0.5;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style/StatusIndicator.css';
 
-class StatusIndicator extends React.Component {
+const StatusIndicator = React.createClass({
   render() {
     return (
       <div className="StatusIndicator">
@@ -10,6 +10,6 @@ class StatusIndicator extends React.Component {
       </div>
     );
   }
-}
+})
 
 export default StatusIndicator;

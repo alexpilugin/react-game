@@ -5,6 +5,9 @@ import RundomActionBtn from './RundomActionBtn';
 import './style/Actions.css';
 
 const Actions = React.createClass({
+    propTypes: {
+      onClickActionBtn: React.PropTypes.func.isRequired
+    },
     getInitialState: function() {
         return {
           actions: [{
@@ -35,6 +38,9 @@ const Actions = React.createClass({
             }]
         }
     },
+  handleClickActionBtn: function (action) {
+  
+  },
 
   render() {
       const actions = this.state.actions.map((item) => {
@@ -45,6 +51,8 @@ const Actions = React.createClass({
                 forces={item.forces}
                 hit={item.hit}
                 defense={item.defense}
+                status={this.props.status}
+                onClickBtn={this.props.onClickActionBtn}
             />   
           )
       })
