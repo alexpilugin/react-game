@@ -5,9 +5,11 @@ import RundomActionBtn from './RundomActionBtn';
 import './style/Actions.css';
 
 const Actions = React.createClass({
+    /*
     propTypes: {
       onClickActionBtn: React.PropTypes.func.isRequired
     },
+    */
     getInitialState: function() {
         return {
           actions: [{

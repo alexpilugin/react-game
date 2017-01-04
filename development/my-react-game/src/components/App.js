@@ -63,7 +63,7 @@ const App = React.createClass({
         }
       })
     }); 
-    if(bothReady){this.fight();}
+    if(bothReady){setTimeout( () => {this.fight()}, 2000) } //delay
   },
   fight: function(){
     var playersMutate = this.state.players;

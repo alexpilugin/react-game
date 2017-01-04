@@ -6,10 +6,10 @@
     margin-left: auto;
 }
 .avatar-1 {
-    background: url(AvatarA-optimised.svg) no-repeat top left;
+    background: url("img/AvatarA-optimised.svg") no-repeat top left;
     background-size: contain;
 }
 .avatar-2 {
-    background: url(AvatarB-optimised.svg) no-repeat top left;
+    background: url("img/AvatarB-optimised.svg") no-repeat top left;
     background-size: contain;    
 }

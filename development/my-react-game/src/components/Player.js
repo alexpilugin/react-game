@@ -13,7 +13,6 @@ const Player = React.createClass({
       };
   },
   handleClickActionBtn: function (action) {
-    if (this.state.status === 'ready') return false;
     
     //onClickActionBtn( attr );
     this.props.onClickActionBtn({
@@ -26,17 +25,18 @@ const Player = React.createClass({
   render() {
     //console.log(this.props.parameters);
     const btnStatus = this.props.status === 'waiting' ? 'enabled' : 'disabled';
-    console.log(btnStatus);
+    //console.log(btnStatus);
+    //console.log(this.props.parameters);
     return (
       <div className="Player">
-        <StatusIndicator status={this.state.status}/>
+        <StatusIndicator status={this.props.status}/>
         <h2>Player: {this.props.name}</h2>
         <Avatar player={this.props.player}/>
         <Parameters params={this.props.parameters}/> 
         <Actions 
           player={this.props.player} 
           status={btnStatus}
-          onClickActionBtn={this.handleClickActionBtn}
+          onClickActionBtn={this.props.status === 'waiting' ? this.handleClickActionBtn : null}
         />
       </div>
     )}
