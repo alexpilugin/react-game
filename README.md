@@ -9,4 +9,4 @@ I added .gitignore with "node_modules/" file to ignore all directories called no
 
 Happy New 2017th Year!
 
-[ScreenShot](./preparation/game-screenshot.png)
+![ScreenShot](./preparation/game-screenshot.png)
