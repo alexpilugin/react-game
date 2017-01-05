@@ -7,6 +7,6 @@ I plan to create a simple interactive game to check my skills in React.<br />
 
 I added .gitignore with "node_modules/" file to ignore all directories called node_modules in current folder and any subfolders.
 
-Happy New 2017th Year!
+(This app on AWS)[https://goo.gl/FVJk2G]
 
 ![ScreenShot](./preparation/game-screenshot.png)
